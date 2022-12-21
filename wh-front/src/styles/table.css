@@ -1,0 +1,108 @@
+/*TABLE STYLE*/
+.table-list th {
+  padding: 10px;
+  background-color: var(--darkGreen);
+  color: var(--light);
+  font-size: 14px;
+  font-weight: 100;
+}
+
+table {
+  width: 100%;
+  border-spacing: 0;
+  border: 1px solid var(--tableBorder);
+  margin: auto;
+  margin-bottom: 35px;
+}
+table tr:last-child td {
+  border-bottom: 0;
+}
+table th,
+table td {
+  margin: 0;
+  padding: 5px;
+}
+
+table th,
+table td {
+  margin: 0;
+  padding: 6spx;
+  border-bottom: 1px solid var(--tableBorder);
+  border-right: 1px solid var(--tableBorder);
+  position: relative;
+}
+
+.employees-row {
+  font-size: 16px;
+  text-align: center;
+}
+
+/*SORT BY FUNCTION*/
+.table-sort,
+.table-sort-up,
+.table-sort-down {
+  padding: 0;
+  margin-left: 10px;
+  background-color: transparent;
+  border: none;
+  color: var(--light);
+}
+
+.entries {
+  font-size: 14px;
+}
+.entries-select-nb {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1.5px solid var(--lightGreen);
+  color: var(--darkGreen);
+  font-size: small;
+  outline: none;
+}
+
+.table-list thead :nth-child(1) .table-main-filter {
+  display: none;
+}
+
+.table-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 98%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+/*FOOTER W- PAGINATION*/
+.table-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.table-pagination-nb {
+  color: var(--darkGreen);
+  font-weight: 700;
+  padding: 0 15px;
+}
+
+.pages-nav-btn {
+  margin: 5px;
+  padding: 5px 8px;
+  border: none;
+  border-radius: 5px;
+  height: 25px;
+  background-color: var(--lightGreen);
+  color: var(--light);
+  font-size: 12px;
+}
+
+.pages-nav-btn:disabled {
+  background-color: var(--buttonGreen);
+}
+
+.pages-nav-btn:hover {
+  background-color: var(--buttonGreenHover);
+}

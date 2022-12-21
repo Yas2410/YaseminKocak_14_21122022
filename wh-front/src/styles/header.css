@@ -1,0 +1,23 @@
+/*HEADER NAV*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-text {
+  font-family: "Merriweather", serif !important;
+  color: var(--darkGreen);
+  font-size: 28px;
+  margin-left: 10px;
+}
+
+.header-link {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+.header-logo {
+  width: 20%;
+}
