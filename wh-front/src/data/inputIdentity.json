@@ -1,0 +1,26 @@
+[
+  {
+    "className": "firstName",
+    "id": "firstName",
+    "label": "Firstname",
+    "type": "text"
+  },
+  {
+    "className": "lastName",
+    "id": "lastName",
+    "label": "Lastname",
+    "type": "text"
+  },
+  {
+    "className": "birthDate",
+    "id": "birthDate",
+    "label": "Birthdate",
+    "type": "date"
+  },
+  {
+    "className": "startDate",
+    "id": "startDate",
+    "label": "Start Date",
+    "type": "date"
+  }
+]

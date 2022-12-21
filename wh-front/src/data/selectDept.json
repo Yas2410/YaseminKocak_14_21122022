@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Select...",
+    "value": "",
+    "abbrev": ""
+  },
+  {
+    "name": "Sales",
+    "abbrev": "Sales"
+  },
+  {
+    "name": "Marketing",
+    "abbrev": "Marketing"
+  },
+  {
+    "name": "Engineering",
+    "abbrev": "Engineering"
+  },
+  {
+    "name": "Human Resources",
+    "abbrev": "Human Resources"
+  },
+  {
+    "name": "Legal",
+    "abbrev": "Legal"
+  }
+]

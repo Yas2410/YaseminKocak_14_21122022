@@ -1,0 +1,20 @@
+[
+  {
+    "className": "street address",
+    "id": "street",
+    "label": "Street",
+    "type": "text"
+  },
+  {
+    "className": "city address",
+    "id": "city",
+    "label": "City",
+    "type": "text"
+  },
+  {
+    "className": "zipCode address",
+    "id": "zipCode",
+    "label": "Zip Code",
+    "type": "text"
+  }
+]
