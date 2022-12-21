@@ -1,0 +1,26 @@
+/***FONTS***/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+
+* {
+  font-family: "MontSerrat", sans-serif;
+  outline: none;
+  cursor: pointer;
+}
+
+/***COLORS***/
+:root {
+  --darkGreen: rgb(66, 83, 37);
+  --lightGreen: rgb(97, 139, 24);
+  --buttonGreen: rgb(132, 158, 86);
+  --buttonGreenHover: rgb(66, 83, 37);
+  --bgLight: rgb(229, 236, 216);
+  --light: white;
+  --dark: black;
+  --error: red;
+  --tableBorder: #ededed;
+}
+
+a {
+  text-decoration: none;
+}
