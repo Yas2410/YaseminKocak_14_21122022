@@ -1,0 +1,32 @@
+/*HOMEPAGE*/
+.homepage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.teamPix {
+  width: 30%;
+  height: auto;
+  padding: 15px;
+  margin-left: 55px;
+}
+
+.homepage-btn {
+  padding: 10px;
+  margin: 35px;
+  font-size: 16px;
+  font-weight: bold;
+  border: var(--darkGreen) 1.5px solid;
+  border-radius: 5px;
+  height: 60px;
+  background-color: var(--lightGreen);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  color: var(--light);
+}
+
+.redirect-btn {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}

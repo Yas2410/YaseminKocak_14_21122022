@@ -1,0 +1,79 @@
+/*FORM*/
+.employee-form {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  max-width: 500px;
+  margin: 15px auto;
+  padding: 5%;
+  background: white;
+  border-radius: 5px;
+  box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px !important;
+}
+
+.employee-form-input {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.employee-form-input label,
+.employee-form-addressBox-legend {
+  font-family: "Merriweather", serif !important;
+  padding: 5px 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--darkGreen);
+}
+
+.employee-form-title {
+  color: var(--darkGreen);
+  text-align: center;
+  font-size: 24px;
+  border: 2px solid var(--darkGreen);
+  padding: 0;
+  margin-top: 0;
+}
+.employee-form-addressBox-legend {
+  font-size: 16px;
+}
+
+.employee-form-submit {
+  display: block;
+  margin: 30px auto 0;
+  width: 30%;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--buttonGreen);
+  color: var(--light);
+}
+
+.employee-form-submit:hover {
+  background-color: var(--darkGreen);
+}
+
+.form-error-msg {
+  color: var(--error);
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+}
+.employee-form-addressBox {
+  border: 2px solid var(--darkGreen);
+}
+
+.employee-form-input input {
+  background-color: var(--bgLight);
+  padding: 10px;
+  border: none;
+}
+
+.employee-form-input select {
+  background-color: var(--darkGreen);
+  padding: 5px;
+  color: var(--light);
+}

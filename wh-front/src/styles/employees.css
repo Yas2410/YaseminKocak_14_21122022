@@ -1,3 +1,85 @@
+/*EMPLOYEE LIST*/
+.employee-list-title {
+  margin: 35px 10px 35px;
+  font-size: 18px;
+  text-align: center;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.employee-list-h1,
+.employees-nb {
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+}
+
+.employee-list-h1 {
+  font-size: 28px;
+  background-color: var(--darkGreen);
+  color: var(--light);
+  width: 100%;
+  padding: 5px;
+}
+
+.employees-nb {
+  color: var(--darkGreen);
+  font-size: 14px;
+  text-align: end;
+  margin-right: 15px;
+}
+
+.employee-id {
+  display: flex;
+  flex-direction: column;
+  padding: 2px;
+}
+
+.btn-flex {
+  display: flex;
+  padding: 10px 0;
+}
+
+.employee-id-column {
+  margin-top: 45px;
+}
+
+.employee.nb {
+  margin: 2px;
+  border: none;
+  height: 22px;
+  background-color: var(--lightGreen);
+  color: var(--light);
+  width: 100%;
+}
+
+.flexend-btn {
+  position: relative;
+}
+.current-employees-btn {
+  padding: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  border: var(--darkGreen) 1.5px solid;
+  border-radius: 5px;
+  height: 35px;
+  background-color: var(--lightGreen);
+  color: var(--light);
+  cursor: pointer;
+  margin-left: 150px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.current-employees-btn:hover {
+  border: var(--darkGreen) 1.5px solid;
+  background-color: var(--darkGreen);
+}
+
 /*FILTER + SEARCHBAR*/
 .search-employee {
   font-size: 14px;
@@ -17,4 +99,24 @@
 .filter-icon {
   width: 35px;
   margin-right: 10px;
+}
+
+/*HOMEPAGE REDIRECTION*/
+.homepage-redirect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+
+  font-weight: 700;
+}
+
+.redirect-link {
+  text-decoration: none;
+  color: var(--darkGreen);
+}
+
+.redirect-logo {
+  width: 2%;
 }
