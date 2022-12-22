@@ -8,8 +8,8 @@ WEALTH HEALTH is an HR application for Employee Record where:
 - All employees are available through a list
 
 **Below the main goals of the project**:
-The main objective of this project was to convert the original jQuery app to React :
 
+- The main objective was to convert the original jQuery app to React
 - React page : Employee creation form
 - React page : Employee List
 - State management system
@@ -17,7 +17,7 @@ The main objective of this project was to convert the original jQuery app to Rea
 - Convert one of the jQuery plugins in a react component publish on npm (here, modal plugin was created)
 - Lighthouse performance test between the two versions
 
-**jQuery Version**is available here : [WEALTH HEALTH App - jQuery Version ](https://github.com/OpenClassrooms-Student-Center/P12_Front-end)
+**jQuery Version** is available here : [WEALTH HEALTH App - jQuery Version ](https://github.com/OpenClassrooms-Student-Center/P12_Front-end)
 
 ---
 
@@ -37,6 +37,8 @@ _You can directly update or delete an employee information card in MongoDB_
 - [React Router](https://reactrouter.com/)
 - [Redux](https://redux.js.org/)
 
+---
+
 ## Installation
 
 ### Clone the repository
@@ -51,13 +53,15 @@ Move to the back-end folder : `cd wh-back`
 Install the dependencies : `npm install`  
 Start local dev server : `nodemon index`  
 _Server should now be running at http://locahost:5000 and you will have 16 employees registered in the MongoDB database_
-_Data can be seen in MongoDB Compass on `wealth-health_db/employees/` directory_
+& _Data can be seen in MongoDB Compass on `wealth-health_db/employees/` directory_
 
 ### FRONT-END Launching
 
 Move to the front-end folder : `cd wh-front`  
 Install the dependencies : `npm install`  
 Launch the project : `npm start`
+
+---
 
 ### LIGHTHOUSE
 
