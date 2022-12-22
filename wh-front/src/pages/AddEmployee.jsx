@@ -28,7 +28,7 @@ function AddEmployee() {
     error: errorSave,
   } = employeeSave;
 
-  const [modalIsOpen, setModalIsOpen] = useState(false);
+  //const [modalIsOpen, setModalIsOpen] = useState(false);
   const [error, setError] = useState([]);
   const [success, setSuccess] = useState(false);
 
@@ -69,7 +69,7 @@ function AddEmployee() {
       return;
     }
     showError({ msg: "", error: false });
-    setModalIsOpen(true);
+    //setModalIsOpen(true);
     dispatch(
       saveEmployee({
         firstName,
@@ -85,7 +85,7 @@ function AddEmployee() {
     );
     if (saveEmployee !== null) {
       setSuccess(true);
-      setModalIsOpen(true);
+      //setModalIsOpen(true);
       setTimeout(() => {
         navigate("/employees");
         //window.location.reload();

@@ -11,10 +11,10 @@ MongDB(Système de gestion de BDD) et l'environnement d'exécution*/
 // "databaseUrl = url de connexion MongoDB
 const app = express();
 const databaseUrl =
-  process.env.DATABASE_URL || "mongodb://localhost:27017/wh_db";
+  process.env.DATABASE_URL || "mongodb://localhost:27017/wealth-health_db";
 //Ajout l.17 sinon erreur (DeprecationWarning: Mongoose: the `strictQuery` option
 //will be switched back to `false` by default in Mongoose 7)
-mongoose.set("strictQuery", false);
+//mongoose.set("strictQuery", false);
 mongoose.connect(databaseUrl, {
   useNewUrlParser: true,
   useUnifiedTopology: true,

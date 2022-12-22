@@ -4,7 +4,7 @@ import homepageTeam from "../assets/team-building.png";
 // Style
 import "../styles/homepage.css";
 
-export function Homepage() {
+function Homepage() {
   return (
     <section>
       <div className="homepage">
@@ -25,3 +25,5 @@ export function Homepage() {
     </section>
   );
 }
+
+export default Homepage;

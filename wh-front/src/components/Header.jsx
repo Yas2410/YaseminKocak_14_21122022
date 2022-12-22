@@ -3,7 +3,7 @@ import logo from "../assets/wh-logo.png";
 // Style
 import "../styles/header.css";
 
-export function header() {
+function Header() {
   return (
     <header className="header">
       <Link className="header-link" to="/">
@@ -13,3 +13,5 @@ export function header() {
     </header>
   );
 }
+
+export default Header;

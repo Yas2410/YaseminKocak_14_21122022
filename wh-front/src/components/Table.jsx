@@ -11,7 +11,7 @@ import { GlobalFilter } from "../components/Filter";
 // Style
 import "../styles/table.css";
 
-export function Table({ columns, data }) {
+function Table({ columns, data }) {
   const {
     getTableProps,
     getTableBodyProps,
@@ -146,3 +146,5 @@ export function Table({ columns, data }) {
     </section>
   );
 }
+
+export default Table;
