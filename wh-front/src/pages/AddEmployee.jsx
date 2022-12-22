@@ -6,8 +6,9 @@ import selectDept from "../data/selectDept.json";
 import "../styles/form.css";
 import dayjs from "dayjs";
 import { saveEmployee } from "../_store/actions";
-//import { Modal } from "wh-modal-plugin";
-//import logo from "../assets/wh-logo.png";
+//Modal
+import { Modal } from "yk-react-modal-plugin";
+import logo from "../assets/wh-logo.png";
 import { useDispatch, useSelector } from "react-redux";
 
 function AddEmployee() {
@@ -28,7 +29,7 @@ function AddEmployee() {
     error: errorSave,
   } = employeeSave;
 
-  //const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [modalIsOpen, setModalIsOpen] = useState(false);
   const [error, setError] = useState([]);
   const [success, setSuccess] = useState(false);
 
@@ -69,7 +70,7 @@ function AddEmployee() {
       return;
     }
     showError({ msg: "", error: false });
-    //setModalIsOpen(true);
+    setModalIsOpen(true);
     dispatch(
       saveEmployee({
         firstName,
@@ -85,7 +86,7 @@ function AddEmployee() {
     );
     if (saveEmployee !== null) {
       setSuccess(true);
-      //setModalIsOpen(true);
+      setModalIsOpen(true);
       setTimeout(() => {
         navigate("/employees");
         //window.location.reload();
@@ -220,18 +221,15 @@ function AddEmployee() {
           </div>
         </div>
       </form>
+      <Modal
+        display={modalIsOpen}
+        setDisplay={setModalIsOpen}
+        img={logo}
+        title="SUCCESS !"
+        txt="The new employee has been correctly saved !"
+      />
     </div>
   );
 }
 
 export default AddEmployee;
-
-/*
-<Modal
-display={modalIsOpen}
-setDisplay={setModalIsOpen}
-img={logo}
-title="SUCCESS !"
-txt="The new employee has been correctly saved !"
-/>
-*/

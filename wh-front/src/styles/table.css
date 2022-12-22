@@ -97,6 +97,7 @@ table td {
   background-color: var(--lightGreen);
   color: var(--light);
   font-size: 12px;
+  cursor: pointer;
 }
 
 .pages-nav-btn:disabled {
