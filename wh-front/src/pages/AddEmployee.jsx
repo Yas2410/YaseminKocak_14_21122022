@@ -29,17 +29,22 @@ function AddEmployee() {
     error: errorSave,
   } = employeeSave;
 
+  //Par défaut, ma modale est fermée
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [error, setError] = useState([]);
   const [success, setSuccess] = useState(false);
 
   const navigate = useNavigate();
+  //Dispatch des actions
   const dispatch = useDispatch();
 
+  //Message d'erreur sur le formulaire
   const showError = (error) => {
     setError(error);
   };
 
+  //Formatage des données (type string) en format date
+  // + format d'affichage dans ma table
   const formatedBirthdate = (birthDate) =>
     dayjs(birthDate).format("YYYY-MM-DD");
   const newBirthdate = formatedBirthdate(birthDate);
@@ -47,6 +52,20 @@ function AddEmployee() {
   const formatedStartdate = (startDate) =>
     dayjs(startDate).format("YYYY-MM-DD");
   const newStartdate = formatedStartdate(startDate);
+
+  /*Ici, si lors de l'envoi de mon formulaire,
+  un ou plusieurs input restent vides, 
+  un message d'erreur va être retourné indiquant
+  que l'ensemble des inputs doivent être complétés*/
+
+  /*A l'inverse, si l'ensemble de mes champs sont 
+  correctement complétés,  le state de mon message
+  d'erreur repasse en false (i.e il ne s'affiche plus
+  et la modale passe a true, cest à dire qu'elle vient
+  bien confirmer l'enregistrement de l'employé en BDD.
+  Je suis redirigée vers la liste comprenant l'ensemble
+  de mes employés + l'employé nouvellement enregistré
+  */
 
   const submitHandler = (e) => {
     e.preventDefault();
@@ -98,6 +117,10 @@ function AddEmployee() {
 
   return (
     <div>
+      <div>
+        {loadingSave && <div>Loading...</div>}
+        {errorSave && <div>{errorSave}</div>}
+      </div>
       <form className="employee-form" onSubmit={submitHandler}>
         <h1 className="employee-form-title">EMPLOYEE HR MASTER RECORD</h1>
         <div className="employee-form-input">
@@ -221,6 +244,7 @@ function AddEmployee() {
           </div>
         </div>
       </form>
+
       <Modal
         display={modalIsOpen}
         setDisplay={setModalIsOpen}

@@ -10,9 +10,11 @@ const EmployeeList = () => {
   const employeeList = useSelector((state) => state.employeeList);
   const { loading, employees, error } = employeeList;
 
+  //Dispatcher les actions = Changements d'états
   const dispatch = useDispatch();
 
   useEffect(() => {
+    //Je récupère la liste des employés
     dispatch(getEmployees());
     return () => {
       //

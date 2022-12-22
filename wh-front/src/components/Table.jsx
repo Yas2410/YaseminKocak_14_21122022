@@ -11,6 +11,8 @@ import { GlobalFilter } from "../components/Filter";
 // Style
 import "../styles/table.css";
 
+//React Table va nous retourner une liste d'éléments,
+//sous forme de tableau
 function Table({ columns, data }) {
   const {
     getTableProps,
@@ -31,6 +33,10 @@ function Table({ columns, data }) {
     setPageSize,
   } = useTable(
     {
+      //les colonnes vont correspondres aux entêtes "Header"
+      //Les datas, à ma liste d'employés
+      //Dans ma page employés, je vais donc retourner :
+      // <Table columns={columns} data={employees} />
       columns,
       data,
     },
@@ -40,6 +46,7 @@ function Table({ columns, data }) {
     usePagination
   );
 
+  //Affichage du nombre de lignes par page
   const { pageIndex, pageSize } = state;
 
   return (

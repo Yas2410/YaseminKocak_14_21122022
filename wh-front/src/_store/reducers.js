@@ -7,6 +7,11 @@ import {
   EMPLOYEE_SAVE_FAIL,
 } from "./types";
 
+//Le REDUCER = Le "cerveau" de Redux
+//C'est une fonction qui va recevoir le state global et
+//une action en paramètre afin de retourner
+//UN NOUVEAU STATE
+
 export function employeeListReducer(state = { employees: [] }, action) {
   switch (action.type) {
     case EMPLOYEE_LIST_REQUEST:

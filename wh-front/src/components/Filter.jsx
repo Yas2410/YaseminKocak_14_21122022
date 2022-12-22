@@ -5,6 +5,8 @@ import filterDark from "../assets/filter-icon-dark.png";
 // Style
 import "../styles/employees.css";
 
+//Component FILTER qui va permettre d'éffectuer une recherche
+//dans ma table entière (nom, adresse, département, etc)
 export function GlobalFilter({ globalFilter, setGlobalFilter }) {
   const [value, setValue] = useState(globalFilter);
 

@@ -4,6 +4,9 @@ import homepageTeam from "../assets/team-building.png";
 // Style
 import "../styles/homepage.css";
 
+//Amélioration de l'interface avec 2 principales redirection :
+//-La liste complète des employés
+//-L'accès au formulaire d'enregistrement
 function Homepage() {
   return (
     <section>

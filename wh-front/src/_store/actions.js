@@ -9,6 +9,11 @@ import {
   EMPLOYEE_SAVE_FAIL,
 } from "./types";
 
+//Les actions vont être déclenchées afin de
+//modifier le State global
+//Type : propriété obligatoire
+//Payload : propriété contenant des données additionnelles
+
 const getEmployees = () => async (dispatch) => {
   try {
     dispatch({ type: EMPLOYEE_LIST_REQUEST });
