@@ -65,5 +65,5 @@ Launch the project : `npm start`
 
 ### LIGHTHOUSE
 
-LightHouse performance tests for both app are available in both json and pdf extensions in :
+LightHouse performance tests for both app are available in both json and img extensions in :
 `src/performances/jQuery` and `src/performances/React`
