@@ -3,24 +3,25 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 80px;
 }
 
 .teamPix {
-  width: 30%;
+  width: 335px;
   height: auto;
-  padding: 15px;
-  margin-left: 55px;
+  /*padding: 15px;*/
+  margin-left: 80px;
 }
 
 .homepage-btn {
   padding: 10px;
-  margin: 35px;
+  margin: 15px;
   font-size: 16px;
   font-weight: bold;
   border: var(--darkGreen) 1.5px solid;
   border-radius: 5px;
   height: 60px;
-  background-color: var(--lightGreen);
+  background-color: var(--darkGreen);
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
   color: var(--light);
   cursor: pointer;

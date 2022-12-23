@@ -94,7 +94,7 @@ table td {
   border: none;
   border-radius: 5px;
   height: 25px;
-  background-color: var(--lightGreen);
+  background-color: var(--darkGreen);
   color: var(--light);
   font-size: 12px;
   cursor: pointer;
@@ -105,5 +105,5 @@ table td {
 }
 
 .pages-nav-btn:hover {
-  background-color: var(--buttonGreenHover);
+  background-color: var(--lightGreen);
 }

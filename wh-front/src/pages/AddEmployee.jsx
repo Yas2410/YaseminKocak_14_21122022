@@ -131,6 +131,7 @@ function AddEmployee() {
             value={firstName}
             onChange={(e) => setFirstName(e.target.value)}
             placeholder="Firstname"
+            pattern="^[A-Za-z.\s_-]+$"
           />
         </div>
         <div className="employee-form-input">
@@ -141,6 +142,7 @@ function AddEmployee() {
             value={lastName}
             onChange={(e) => setLastName(e.target.value)}
             placeholder="Lastname"
+            pattern="^[A-Za-z.\s_-]+$"
           />
         </div>
         <div className="employee-form-input">
@@ -175,6 +177,7 @@ function AddEmployee() {
               value={city}
               onChange={(e) => setCity(e.target.value)}
               placeholder="City"
+              pattern="^[A-Za-z.\s_-]+$"
             />
           </div>
           <div className="employee-form-input">
@@ -185,6 +188,7 @@ function AddEmployee() {
               value={zipCode}
               onChange={(e) => setZipCode(e.target.value)}
               placeholder="Zipcode"
+              pattern="[0-9]{5}"
             />
           </div>
           <div className="employee-form-input">
